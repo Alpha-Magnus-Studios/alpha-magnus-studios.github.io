@@ -1,13 +1,656 @@
-<!doctype html>
-<html>
-<head>
-    <title>Alpha Magnus Studios</title>
-</head>
-<body style="background: #222;">
-    <div style="text-align: center; width: 100%; display: table; vertical-align:middle; height: 100%">
-        <img src="ams.png" /><br>
-        <h2 style="color: #444; font-family: Segoe UI">We'll be back soon!</h2>
-        <h1 style="color: #777; font-family: Segoe UI">info@alphamstudios.com</h1>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<title>Alpha Magnus Studios | Android App Development, Web Design and Software Services</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+        <meta name="description" content="Android App Development, Web Design and Software Services">
+        <meta name="keywords" content="Android, App, Development, Web, Design, Software, Services">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+		<link href="images/logo.png" rel="icon" type="image/png" />
+
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<link rel='stylesheet' id='camera-css'  href='css/camera.css' type='text/css' media='all'>
+
+		<link rel="stylesheet" type="text/css" href="css/slicknav.css">
+		<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+				
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Open+Sans:700' rel='stylesheet' type='text/css'>
+		<script type="text/javascript" src="js/jquery.mobile.customized.min.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.1.3.js"></script> 
+		<script type="text/javascript" src="js/camera.min.js"></script>
+		<script type="text/javascript" src="js/myscript.js"></script>
+		<script src="js/sorting.js" type="text/javascript"></script>
+		<script src="js/jquery.isotope.js" type="text/javascript"></script>
+		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
+		
+
+		<script>
+			jQuery(function(){
+					jQuery('#camera_wrap_1').camera({
+					transPeriod: 500,
+					time: 3000,
+					height: '490px',
+					thumbnails: false,
+					pagination: true,
+					playPause: false,
+					loader: false,
+					navigation: false,
+					hover: false
+				});
+			});
+		</script>
+		<!--pop up java-->   
+		<script>$(document).ready(function() {    
+
+		var id = '#dialog';
+	
+		//Get the screen height and width
+		var maskHeight = $(document).height();
+		var maskWidth = $(window).width();
+	
+		//Set heigth and width to mask to fill up the whole screen
+		$('#mask').css({'width':maskWidth,'height':maskHeight});
+		
+		//transition effect		
+		$('#mask').fadeIn(500);	
+		$('#mask').fadeTo("slow",0.9);	
+	
+		//Get the window height and width
+		var winH = $(window).height();
+		var winW = $(window).width();
+              
+		//Set the popup window to center
+		$(id).css('top',  winH/2-$(id).height()/2);
+		$(id).css('left', winW/2-$(id).width()/2);
+	
+		//transition effect
+		$(id).fadeIn(2000); 	
+	
+	//if close button is clicked
+	$('.window .close').click(function (e) {
+		//Cancel the link behavior
+		e.preventDefault();
+		
+		$('#mask').hide();
+		$('.window').hide();
+	});		
+	
+	//if mask is clicked
+	$('#mask').click(function () {
+		$(this).hide();
+		$('.window').hide();
+	});		
+	
+});
+
+
+		</script>
+		<!--pop up java--> 
+	</head>
+	<body>
+	
+	<!-- popup html-->
+<div id="boxes">
+  <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">Alpha Magnus Studios
+    <div id="lorem">
+      <p> This Website is under development. Some features may be unavailable or may not work as intended in this beta version. We will be back soon. Please feel free to explore our beta site </p>
     </div>
-</body>
+    <div id="popupfoot"> <a href ="" class="close agree" style="color:red;">Explore Beta</a></div>
+  </div>
+  <div style="width: 50%; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
+</div>
+ <!-- popup html-->
+	
+	
+	
+<!--home start-->
+    
+    <div id="home">
+    	<div class="headerLine">
+	<div id="menuF" class="default">
+		<div class="container">
+			<div class="row">
+				<div class="logo col-md-4">
+					<div>
+						<a href="#">
+							<img src="images/AMS.png" style="width:50%,height:50%">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="navmenu" style="text-align: center;">
+						<ul id="menu">
+							<li class="active" ><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#clients">Clients</a></li>
+							<li><a href="#services">Services</a></li>
+							<li class="last"><a href="#contact">Contact</a></li>
+							<!--li><a href="#features">Features</a></li-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<div class="row wrap">
+				<div class="col-md-12 gallery"> 
+						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We listen.</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We discuss.</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We develop.</h2>
+								</div>
+							</div>
+						</div><!-- #camera_wrap_1 -->
+				</div>
+			</div>
+		</div>
+	</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 project">
+					<h3 id="counter">0</h3>
+					<h4>Awesome Projects</h4>
+					<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+				</div>
+				<div class="col-md-4 project">
+					<h3 id="counter1">0</h3>
+					<h4>Happy Customers</h4>
+					<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+				</div>
+				<div class="col-md-4 project">
+					<h3 id="counter2" style="margin-left: 20px;">0</h3>
+					<h4 style="margin-left: 20px;">Professional Awards</h4>
+					<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 cBusiness">
+					<h3>We Create the best Business Sites &ndash; Attractive Ones</h3>
+					<h4>Discover elegant solutions for your online business &ndash; fast, reliable, affordable.</h4>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 centPic">
+					<img class="img-responsive"  src="images/bizPic.png"/>
+				</div>
+			</div>
+		</div>   
+    </div>
+    
+<!--about start-->    
+    
+    <div id="about">
+    	<div class="line2">
+			<div class="container">
+				<div class="row Fresh">
+					<div class="col-md-4 Des">
+						<i class="fa fa-heart"></i>
+						<h4>Fresh &amp; Clean Design</h4>
+						<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+					</div>
+					<div class="col-md-4 Ver">
+						<i class="fa fa-cog"></i>
+						<h4>Very Flexible</h4>
+						<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+					</div>
+					<div class="col-md-4 Fully">
+						<i class="fa fa-tablet"></i>
+						<h4>Fully Responsive</h4>
+						<p>******* ******* ***** ******* ********* **** **** ** **** ** *** *** ** **</p>
+					</div>		
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 wwa">
+					<span name="about" ></span>
+					<h3>Who Are We? Meet Our Team!</h3>
+					<h4>We listen, we discuss, we advise and develop. We love to learn and use the latest technologies.</h4>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row team">
+				<div class="col-md-4 b1">
+						<img class="img-responsive" src="images/picTeam/picT1.png">
+						<h4>Afaan Bilal</h4>
+						<h5>Partner<br/>afaan@alphamstudios.com</h5>
+						<p>####################<br/>########################################<br/>####################.</p>
+						<ul>
+							<li><a href="https://facebook.com/AfaanBilal"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="https://twitter.com/AfaanBilal"><i class="fa fa-twitter" ></i></a></li>
+							<li><a href="https://google.com/+AfaanBilal"><i class="fa fa-google-plus-square"></i></a></li>
+						</ul>
+				</div>
+			
+			
+				<div class="col-md-4">
+						<img class="img-responsive" src="images/picTeam/picT2.png">
+						<h4>Moin Khan</h4>
+						<h5>Partner<br/>moin@alphamstudios.com</h5>
+						<p>####################<br/>########################################<br/>####################.</p>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+						</ul>
+				</div>
+		
+			
+				<div class="col-md-4 b3">
+						<img class="img-responsive" src="images/picTeam/picT3.png">
+						<h4>Anees Muzzafer</h4>
+						<h5>Parnter<br/>anees@alphamstudios.com</h5>
+						<p>####################<br/>########################################<br/>####################.</p>
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+						</ul>
+				</div>
+			</div>
+		</div>
+			
+	</div>	
+
+<!--clients start-->
+    <div class="container">
+			<div class="row">
+				<div class="col-md-12 hr1">
+					<hr/>
+				</div>
+			</div>
+		</div>	
+	<div id="clients">	
+	
+		<div class="container">
+			<div class="row aboutUs" style="margin-top:150px;">
+				<div class="col-md-12 ">
+					<h3>What our customers say about us</h3>
+				</div>
+			</div>
+		</div>
+		
+		<div style="position: relative;">
+		
+			<div class="container">
+				<div class="row about">
+					<div class="col-md-6">
+						<div class="about1">
+						<img class="pic1Ab" src="images/picAbout/aboutP1.png">
+							<h3>Anna Smith, Company Inc.</h3>
+							<p>*** *** ***** **** *** ***** *** ******* ****. ******* ******* ***** *******  **** **** ** **** ** *** *** ** **  * **** *** *****  **** **** ** **** ** *** *** ** ** **** ***  ***** **** ***  **** **** ** ** *** *** ** **</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about2">
+						<img class="pic2Ab" src="images/picAbout/aboutP2.png">
+							<h3>John Doe, Company Inc.</h3>
+							<p>*** *** ***** **** *** ***** *** ******* ****. ******* ******* ***** *******  **** **** ** **** ** *** *** ** **  * **** *** *****  **** **** ** **** ** *** *** ** ** **** ***  ***** **** ***  **** **** ** ** *** *** ** **</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+			<div class="horL"></div>
+		
+			<div class="container">
+				<div class="row about">
+					<div class="col-md-6">
+						<div class="about1">
+						<img class="pic1Ab" src="images/picAbout/aboutP3.png">
+							<h3>Tom Sawyer, Company Inc.</h3>
+							<p>*** *** ***** **** *** ***** *** ******* ****. ******* ******* ***** *******  **** **** ** **** ** *** *** ** **  * **** *** *****  **** **** ** **** ** *** *** ** ** **** ***  ***** **** ***  **** **** ** ** *** *** ** **</p>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="about2">
+						<img class="pic2Ab" src="images/picAbout/aboutP4.png">
+							<h3>Sarah White, Company Inc.</h3>
+							<p>*** *** ***** **** *** ***** *** ******* ****. ******* ******* ***** *******  **** **** ** **** ** *** *** ** **  * **** *** *****  **** **** ** **** ** *** *** ** ** **** ***  ***** **** ***  **** **** ** ** *** *** ** **</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
+	</div>
+	
+<!--services start-->
+    	
+	<div id="services">	
+	<div class="container" >
+			<div class="row">
+				<div class="col-md-12 hr1">
+					<hr/>
+				</div>
+			</div>
+		</div>
+		<div class="container" style="margin-top:100px;">
+			<div class="row">
+			<h3><center>Our Services</center></h3>
+				<div class="col-md-3 bar">
+				
+					<div class="progB chart" data-percent="92"  data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="92">
+							  <span class="percent">92</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Web Development</h3>
+						<p>** **** ** ** ** *** *** ** *** **** ***** <br/>** **** ** ** ** *** *** ** *** **** ***** </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar">
+					<div class="progB chart" data-percent="88"  data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="88">
+							  <span class="percent">88</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Android</h3>
+						<p>** **** ** ** ** *** *** ** *** **** ***** <br/>** **** ** ** ** *** *** ** *** **** ***** </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar ">
+					<div class="progB chart" data-percent="84"  data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="84">
+							  <span class="percent">84</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Automation</h3>
+						<p>** **** ** ** ** *** *** ** *** **** ***** <br/>** **** ** ** ** *** *** ** *** **** ***** </p>
+					</div>
+				</div>
+				<div class="col-md-3 bar ">
+					<div class="progB chart" data-percent="85"  data-animate="3500">
+						<div class="chart chart-content">
+							<div class="percentage" data-percent="85">
+							  <span class="percent">85</span>
+							</div>
+						</div>
+					</div>
+					<div class="textP">
+						<h3>Software Development</h3>
+						<p>** **** ** ** ** *** *** ** *** **** ***** <br/>** **** ** ** ** *** *** ** *** **** ***** </p>
+					</div>
+				</div>
+				
+			</div>
+		</div>	
+		
+		
+    </div>
+ 
+
+<!--contact start-->
+    
+    <div id="contact">
+    	<div class="line5">					
+			<div class="container">
+				<div class="row Ama">
+					<div class="col-md-12">
+					<h3>Got a Question? We&rsquo;re here to help!</h3>
+					<p>Get in touch with us</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-9 col-xs-12 forma">
+					<form>
+						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
+						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
+						<input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/>
+						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message *'></textarea>
+						<div class="cBtn col-xs-12">
+							<ul>
+								<li class="clear"><a href="#"><i class="fa fa-times"></i>clear form</a></li>
+								<li class="send"><a href="#"><i class="fa fa-share"></i>Send Message</a></li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-3 col-xs-12 cont">
+					<ul>
+						<li><i class="fa fa-home"></i>Srinagar, Jammu and Kashmir, 190006</li>
+						<li><i class="fa fa-phone"></i>**********</li>
+						<li><a href="#"><i class="fa fa-envelope"></i>info@alphamstudios.com</li></a>
+						<li><i class="fa fa-skype"></i>compname</li>
+						<li><a href="https://twitter.com/alphamstudios"><i class="fa fa-twitter"></i>Twitter</li></a>
+						<li><a href="#"><i class="fa fa-facebook-square"></i>Facebook</li></a>
+						<li><a href="#"><i class="fa fa-dribbble"></i>Dribbble</li></a>
+						<li><a href="#"><i class="fa fa-flickr"></i>Flickr</li></a>
+						<li><a href="#"><i class="fa fa-youtube-play"></i>YouTube</li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="line6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.84536223281!2d74.83636191537602!3d34.1247083805863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA3JzI5LjAiTiA3NMKwNTAnMTguOCJF!5e0!3m2!1sen!2sin!4v1501666063141" width="100%" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>		
+		
+		</div>
+		<div class="container">
+			<div class="row ftext">
+				<div class="col-md-12">
+				<a id="features"></a>
+				<h3>We care about our clients and make their life easier!</h3>
+				<p>** **** ** ** ** *** *** ** *** **** ***** ** ** ** ** ** *** *** ** *** **** ***** ** **** ** ** ** *** *** ** *** **** ***** </p>
+				</div>
+			</div>
+		</div>
+		<div class="line7">
+			<div class="container">
+				<div class="row footer">
+					<div class="col-md-12">
+						<h3>Subscribe for Our Newsletter!</h3>
+						<p>Subscribe to our newsletter email to get notification about fresh news, latest promos, latest Releases from AMS. Stay always up-to-date!</p>
+						<div class="fr">
+						<div style="display: inline-block;">
+							<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
+							<a href="#" class="subS">Subscribe!</a>
+						</div>
+						</div>
+					</div>
+					<div class="soc col-md-12">
+						<ul>
+							<li class="soc1"><a href="#"></a></li>
+							<li class="soc2"><a href="#"></a></li>
+							<li class="soc3"><a href="#"></a></li>
+							<li class="soc4"><a href="#"></a></li>
+							<li class="soc5"><a href="#"></a></li>
+							<li class="soc6"><a href="#"></a></li>
+							<li class="soc7"><a href="#"></a></li>
+							<li class="soc8"><a href="#"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lineBlack">
+			<div class="container">
+				<div class="row downLine">
+					
+					<div class="col-md-6 text-left copy">
+						<p>Copyright &copy; 2017 Aplha Magnus Studios. All Rights Reserved.</p>
+					</div>
+					<div class="col-md-6 text-right dm">
+						<ul id="downMenu">
+							<li class="active"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#clients">Clients</a></li>
+							<li><a href="#services">Services</a></li>
+							<li class="last"><a href="#contact">Contact</a></li>
+							<!--li><a href="#features">Features</a></li-->
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>		
+		
+		
+	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.slicknav.js"></script>
+	<script>
+			$(document).ready(function(){
+			$(".bhide").click(function(){
+				$(".hideObj").slideDown();
+				$(this).hide(); //.attr()
+				return false;
+			});
+			$(".bhide2").click(function(){
+				$(".container.hideObj2").slideDown();
+				$(this).hide(); // .attr()
+				return false;
+			});
+				
+			$('.heart').mouseover(function(){
+					$(this).find('i').removeClass('fa-heart-o').addClass('fa-heart');
+				}).mouseout(function(){
+					$(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
+				});
+				
+				function sdf_FTS(_number,_decimal,_separator)
+				{
+				var decimal=(typeof(_decimal)!='undefined')?_decimal:2;
+				var separator=(typeof(_separator)!='undefined')?_separator:'';
+				var r=parseFloat(_number)
+				var exp10=Math.pow(10,decimal);
+				r=Math.round(r*exp10)/exp10;
+				rr=Number(r).toFixed(decimal).toString().split('.');
+				b=rr[0].replace(/(\d{1,3}(?=(\d{3})+(?:\.\d|\b)))/g,"\$1"+separator);
+				r=(rr[1]?b+'.'+rr[1]:b);
+
+				return r;
+}
+				
+			setTimeout(function(){
+					$('#counter').text('0');
+					$('#counter1').text('0');
+					$('#counter2').text('0');
+					setInterval(function(){
+						
+						var curval=parseInt($('#counter').text());
+						var curval1=parseInt($('#counter1').text().replace(' ',''));
+						var curval2=parseInt($('#counter2').text());
+						if(curval<=707){
+							$('#counter').text(curval+1);
+						}
+						if(curval1<=12280){
+							$('#counter1').text(sdf_FTS((curval1+20),0,' '));
+						}
+						if(curval2<=245){
+							$('#counter2').text(curval2+1);
+						}
+					}, 2);
+					
+				}, 500);
+			});
+	</script>
+	<script type="text/javascript">
+	jQuery(document).ready(function(){
+		jQuery('#menu').slicknav();
+		
+	});
+	</script>
+	
+	<script type="text/javascript">
+    $(document).ready(function(){
+       
+        var $menu = $("#menuF");
+            
+        $(window).scroll(function(){
+            if ( $(this).scrollTop() > 100 && $menu.hasClass("default") ){
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("default")
+                           .addClass("fixed transbg")
+                           .fadeIn('fast');
+                });
+            } else if($(this).scrollTop() <= 100 && $menu.hasClass("fixed")) {
+                $menu.fadeOut('fast',function(){
+                    $(this).removeClass("fixed transbg")
+                           .addClass("default")
+                           .fadeIn('fast');
+                });
+            }
+        });
+	});
+    //jQuery
+	</script>
+	<script>
+		/*menu*/
+		function calculateScroll() {
+			var contentTop      =   [];
+			var contentBottom   =   [];
+			var winTop      =   $(window).scrollTop();
+			var rangeTop    =   200;
+			var rangeBottom =   500;
+			$('.navmenu').find('a').each(function(){
+				contentTop.push( $( $(this).attr('href') ).offset().top );
+				contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+			})
+			$.each( contentTop, function(i){
+				if ( winTop > contentTop[i] - rangeTop && winTop < contentBottom[i] - rangeBottom ){
+					$('.navmenu li')
+					.removeClass('active')
+					.eq(i).addClass('active');				
+				}
+			})
+		};
+		
+		$(document).ready(function(){
+			calculateScroll();
+			$(window).scroll(function(event) {
+				calculateScroll();
+			});
+			$('.navmenu ul li a').click(function() {  
+				$('html, body').animate({scrollTop: $(this.hash).offset().top - 80}, 800);
+				return false;
+			});
+		});		
+	</script>	
+	<script type="text/javascript" charset="utf-8">
+
+		jQuery(document).ready(function(){
+			jQuery(".pretty a[rel^='prettyPhoto']").prettyPhoto({animation_speed:'normal',theme:'light_square',slideshow:3000, autoplay_slideshow: true, social_tools: ''});
+			
+		});
+	</script>
+	</body>
+	
 </html>
