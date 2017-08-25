@@ -66,6 +66,11 @@ body{
 	font-weight:300;
 	text-transform:lowercase;
 }
+.logo h3{
+	letter-spacing: 0.5px;
+	font-family: 'Arima Madurai', cursive;
+	margin-top:5px;
+}
 .logo a{
 	cursor:pointer;
 	color:#fff;
@@ -139,7 +144,7 @@ border: none;
 }
 .camera_caption h2{
 	border-bottom:4px solid #1fcdff;
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'Arima Madurai', cursive;
 	font-size:100px;
 	font-weight:700;
 	letter-spacing: -2px;
@@ -2062,7 +2067,7 @@ margin-bottom: 35px !important;
 		z-index:999;
         position:fixed;
         top: -65px; 
-        padding:20px 0;
+        padding:8px;
         width:100%;
 		background-color: #101010!important;
     }
