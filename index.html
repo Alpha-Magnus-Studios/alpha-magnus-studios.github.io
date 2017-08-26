@@ -440,12 +440,18 @@
 						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message *'></textarea>
 						<div class="cBtn col-xs-12">
 							<ul>
-								<li class="clear"><a href="#"><i class="fa fa-times"></i>clear form</a></li>
-								<li class="send"><a href="#"><i class="fa fa-share"></i>Send Message</a></li>
+								<li class="clear"><a onclick="under_develop()"><i class="fa fa-times"></i>clear form</a></li>
+								<li class="send"><a onclick="under_develop()"><i class="fa fa-share"></i>Send Message</a></li>
 							</ul>
 						</div>
 					</form>
 				</div>
+				<script>
+				function under_develop(){
+				 alert("This feature is not available in beta version");
+				}
+				
+				</script>
 				<div class="col-md-3 col-xs-12 cont">
 					<ul>
 						<li><i class="fa fa-home"></i>Srinagar, Jammu and Kashmir, 190006</li>
@@ -478,9 +484,9 @@
 			<div class="container">
 				<div class="row footer">
 					<div class="col-md-12">
-						<h3>Subscribe for Our Newsletter!</h3>
-						<p>Subscribe to our newsletter email to get notification about fresh news, latest promos, latest Releases from AMS. Stay always up-to-date!</p>
-						<div class="fr">
+						<h3>Follow us on Social Network</h3>
+						<p></p>
+						<div class="fr" style="visibility:hidden;">
 						<div style="display: inline-block;">
 							<input class="col-md-6 fEmail" name='Email' placeholder='Enter Your Email'/>
 							<a href="#" class="subS">Subscribe!</a>
