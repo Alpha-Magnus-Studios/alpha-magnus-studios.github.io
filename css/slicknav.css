@@ -99,6 +99,12 @@
 	background:#ccc;
 	color:#fff;	
 }
+.slicknav_menu h3{
+	letter-spacing: 0.5px;
+	font-family: 'Arima Madurai', cursive;
+	font-size: 13px;
+	color:#FFFFFF;
+}
 .slicknav_nav a:hover{
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;

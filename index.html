@@ -205,7 +205,7 @@
     
     <div id="about">
     	<div class="line2">
-			<div class="container">
+			<div class="container" style="visibility:hidden;">
 				<div class="row Fresh">
 					<div class="col-md-4 Des">
 						<i class="fa fa-heart"></i>
@@ -304,14 +304,14 @@
 						<div class="about1">
 						<img class="pic1Ab" src="images/picAbout/nitsri.png">
 							<h3>National Institute of Technology, Srinagar.</h3>
-							<p>Being themselves the  of NIT Srinagar we feel extremely proud with the work that Alpha Magnus has done for us on both the development and testing sides.</p>
+							<p>Being themselves the students of NIT Srinagar we feel extremely proud with the work that Alpha Magnus has done for us on both the development and testing sides.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="about2">
 						<img class="pic2Ab" src="images/picAbout/amx.png">
 							<h3>AMX Infinity</h3>
-							<p>Awesome team to work with, great execution of plans and AMS was willing to go the extra mile for us whenever we had urgent requests. Found them quite efficient in meeting the deadlines.</p>
+							<p>Awesome team to work with, great execution of plans. AMS was willing to go the extra mile for us whenever we had urgent requests. Found them quite efficient in meeting the deadlines.</p>
 
 						</div>
 					</div>
@@ -326,14 +326,14 @@
 						<div class="about1">
 						<img class="pic1Ab" src="images/picAbout/albirra.png">
 							<h3>Al-Birra Foundation</h3>
-							<p>*** *** ***** **** *** ***** *** ******* ****. ******* ******* ***** *******  **** **** ** **** ** *** *** ** **  * **** *** *****  **** **** ** **** ** *** *** ** ** **** ***  ***** **** ***  **** **** ** ** *** *** ** **</p>
+							<p>They were the perfect partners we could have to really execute the plans which were just the scattered ideas in our brains. They, effeciently and effectively, did their job and together we created something worth sharing.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="about2">
 						<img class="pic2Ab" src="images/picAbout/jkgovt.png">
 							<h3>J&ampK Government</h3>
-							<p>There was always someone on other side to answer the phone and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently</p>
+							<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently</p>
 						</div>
 					</div>
 				</div>
@@ -570,13 +570,13 @@
 						var curval=parseInt($('#counter').text());
 						var curval1=parseInt($('#counter1').text().replace(' ',''));
 						var curval2=parseInt($('#counter2').text());
-						if(curval<=707){
+						if(curval<27){
 							$('#counter').text(curval+1);
 						}
-						if(curval1<=12280){
+						if(curval1<12280){
 							$('#counter1').text(sdf_FTS((curval1+20),0,' '));
 						}
-						if(curval2<=245){
+						if(curval2<245){
 							$('#counter2').text(curval2+1);
 						}
 					}, 2);
