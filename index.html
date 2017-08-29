@@ -5,7 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		
-        <meta name="description" content="Android App Development, Web Design and Software Services">
+        <meta name="description" content="Alpha Magnus Studios specialize in Android app development, web design and software development services.">
         <meta name="keywords" content="Android, App, Development, Web, Design, Software, Services">
         
         <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -360,16 +360,27 @@
     
     <div id="about">
     	<div class="line2">
+            <div class="container">
+				<div class="row Ama" style="margin-bottom:0;padding:0;">
+					<div class="col-md-12">
+					<h3>Highlights</h3>
+                    <h3 style="font-size: 2em;">Brilliant Professional Work<h3>
+					</div>
+				</div>
+			</div>
 			<div class="container">
-				<div class="row Fresh">
+				<div class="row Fresh" style="margin-top: 2%;">
 					<div class="col-md-4 Des">
                         <img src="images/lms.png" style="width:100%;">
+                        <h4>Library Management System</h4>
 					</div>
 					<div class="col-md-4 Ver">
                         <img src="images/abs.png" style="width:100%;">
+                        <h4>Al-Birra Services</h4>
 					</div>
 					<div class="col-md-4 Fully">
                         <img src="images/psga.png" style="width:100%;">
+                        <h4>Public Services Online Portal</h4>
 					</div>		
 				</div>
 			</div>
@@ -443,15 +454,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-xs-12 forma">
-					<form>
-						<input type="text" class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
-						<input type="text" class="col-md-6 col-xs-12 Email" name='Email' placeholder='Email *'/>
-						<input type="text" class="col-md-12 col-xs-12 Subject" name='Subject' placeholder='Subject'/>
-						<textarea type="text" class="col-md-12 col-xs-12 Message" name='Message' placeholder='Message *'></textarea>
+					<form method="post" action="https://script.google.com/macros/s/AKfycby1meiHAJaRhJBgGAFqwLX1r_p0V5BJ05wowJI6-7HmNhrLdq4/exec" name="contactForm">
+						<input type="text" required class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
+						<input type="text" required class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
+						<textarea type="text" required class="col-md-12 col-xs-12 Message" name='message' placeholder='Message *'></textarea>
 						<div class="cBtn col-xs-12">
 							<ul>
-								<li class="clear"><a onclick="under_develop()"><i class="fa fa-times"></i>clear form</a></li>
-								<li class="send"><a onclick="under_develop()"><i class="fa fa-share"></i>Send Message</a></li>
+								<li class="clear"><a onclick="document.forms.contactForm.reset()"><i class="fa fa-times"></i>clear form</a></li>
+								<li class="send"><a onclick="if (document.forms.contactForm.checkValidity()) document.forms.contactForm.submit(); else alert('Error: Please fill in all the fields properly.');"><i class="fa fa-share"></i>Send Message</a></li>
 							</ul>
 						</div>
 					</form>
