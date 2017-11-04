@@ -674,7 +674,7 @@ border: none;
 	width: 1170px;
 	height: 465px;
 	content: '';
-	z-index: 30;
+	z-index: -1;
 	background: url(../images/horL.png);
 	background-repeat: repeat-y;
 }
