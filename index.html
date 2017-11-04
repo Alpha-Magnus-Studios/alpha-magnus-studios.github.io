@@ -360,7 +360,7 @@
 										alert("These projects are confidential!");
 									}
 									</script>
-							<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently</p>
+							<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently.</p>
 						</div>
 					</div>
 				</div>
@@ -374,7 +374,7 @@
 							<h3>
 									<a href="http://amxinfinity.ml" target="_blank">AMX Infinity</a>
 							</h3>
-							<p>They were the perfect partners we could have to really execute the plans which were just the scattered ideas in our brains. They, effeciently and effectively, did their job and together we created something worth sharing.</p>
+							<p>We are very fortunate to get to collaborate with Alpha Magnus Studios for our various projects. The team comprises of very friendly people of high calibre. Great work culture and company atmosphere.</p>
 						</div>
 					</div>
 					<div class="col-md-6">
@@ -383,7 +383,7 @@
 							<h3>
 									<a href="http://aliqrakashmir.in" target="_blank">Al IQRA Kashmir</a>
 							</h3>
-							<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently</p>
+							<p>AMS has been the perfect place for us to put our ideas into existence. It was their dedication towards our project that made our collaboration extremely successful. We recommend everyone to work with them.</p>
 						</div>
 					</div>
 				</div>
@@ -502,14 +502,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-9 col-xs-12 forma">
-					<form method="post" action="https://script.google.com/macros/s/AKfycby1meiHAJaRhJBgGAFqwLX1r_p0V5BJ05wowJI6-7HmNhrLdq4/exec" name="contactForm">
-						<input type="text" required class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
-						<input type="text" required class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
-						<textarea type="text" required class="col-md-12 col-xs-12 Message" name='message' placeholder='Message *'></textarea>
+					<form method="post" id="contactForm" name="contactForm">
+                        <div id="success" class="col-md-9"></div>
+						<input type="text" id="name" required class="col-md-6 col-xs-12 name" name='name' placeholder='Name *'/>
+						<input type="text" id="email" required class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *'/>
+						<textarea type="text" id="message" required class="col-md-12 col-xs-12 Message" name='message' placeholder='Message *'></textarea>
 						<div class="cBtn col-xs-12">
 							<ul>
 								<li class="clear"><a onclick="document.forms.contactForm.reset()"><i class="fa fa-times"></i>clear form</a></li>
-								<li class="send"><a onclick="if (document.forms.contactForm.checkValidity()) document.forms.contactForm.submit(); else alert('Error: Please fill in all the fields properly.');"><i class="fa fa-share"></i>Send Message</a></li>
+								<li class="send"><button style="background:0;border:0;color:white;" type="submit"><i class="fa fa-share"></i> Send Message</button></li>
 							</ul>
 						</div>
 					</form>
@@ -735,6 +736,9 @@
     })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact.js"></script>
 	</body>
 	
 </html>
