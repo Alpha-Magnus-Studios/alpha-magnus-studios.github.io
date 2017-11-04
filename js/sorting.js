@@ -1,4 +1,7 @@
-$(window).load(function(){
+/*
+ * (c) Alpha Magnus Studios
+ */
+ $(window).load(function(){
 	
 	var $container = $('.portfolio_block, .shop_block');
 

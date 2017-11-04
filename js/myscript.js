@@ -1,13 +1,8 @@
 window.jQuery = window.$ = jQuery;
-
-/* Custom Scripts */
-
-
-
-/*-----------------------------------------------------------------------------------*/
-/*	CHART
-/*-----------------------------------------------------------------------------------*/
-jQuery(document).ready(function(){
+/*
+ * (c) Alpha Magnus Studios
+ */
+ jQuery(document).ready(function(){
     var chart = $('.chart'),
         chartNr = $('.chart-content'),
         chartParent = chart.parent();
