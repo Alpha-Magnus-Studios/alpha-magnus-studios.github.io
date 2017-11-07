@@ -1,8 +1,7 @@
-/*!
-	SlickNav Responsive Mobile Menu
-	(c) 2014 Josh Cope
-	licensed under MIT
-*/
+/*
+ * (c) Alpha Magnus Studios
+ */
+ 
 ;(function ($, document, window) {
 	var
 	// default settings object.
