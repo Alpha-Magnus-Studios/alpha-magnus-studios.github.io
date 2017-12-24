@@ -65,7 +65,11 @@ a {
 	color:#fff;
 }
 .logo h3 {
-    font-size: 18px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+	font-family: 'Raleway', cursive;
+	margin-top:5px;
+
 }
 .logo span{
 	color:#1fcdff;
@@ -77,11 +81,6 @@ a {
 	font-size:12px;
 	font-weight:300;
 	text-transform:lowercase;
-}
-.logo h3{
-	letter-spacing: 0.5px;
-	font-family: 'Arima Madurai', cursive;
-	margin-top:5px;
 }
 .logo a{
 	cursor:pointer;
