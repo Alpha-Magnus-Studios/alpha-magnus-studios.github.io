@@ -99,7 +99,7 @@ border:0;
 color:#1fcdff;
 }
 #menu .active a:focus{
-	outline: none;
+outline: none;
 border: none;
 }
 #menu .active a:active {
@@ -122,7 +122,7 @@ border: none;
 	padding-right: 16px;
 	float:left;
 	font-family: 'Roboto', 'sans-serif';
-	font-size:14px;
+	font-size:16px;
 	color:#fff;
 	list-style:none;
 	text-transform:uppercase;
