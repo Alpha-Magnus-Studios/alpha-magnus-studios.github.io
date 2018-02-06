@@ -1,6 +1,7 @@
 /*
  * (c) Alpha Magnus Studios
- */Query.easing['jswing'] = jQuery.easing['swing'];
+ */
+jQuery.easing['jswing'] = jQuery.easing['swing'];
 
 jQuery.extend( jQuery.easing,
 {

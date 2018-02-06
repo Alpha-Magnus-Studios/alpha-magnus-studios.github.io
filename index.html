@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-112799528-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-112799528-1');
+		</script>
+
 		<title>Alpha Magnus Studios | Android App Development, Web Design and Software Services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,7 +42,6 @@
 		<script src="js/jquery.isotope.js" type="text/javascript"></script>
 		<!--script type="text/javascript" src="js/jquery.nav.js"></script-->
 		
-
 		<script>
 			jQuery(function(){
 					jQuery('#camera_wrap_1').camera({
@@ -48,103 +57,41 @@
 				});
 			});
 		</script>
-		<!--pop up java-/->   
-		<script>$(document).ready(function() {    
-
-		var id = '#dialog';
-	
-		//Get the screen height and width
-		var maskHeight = $(document).height();
-		var maskWidth = $(window).width();
-	
-		//Set heigth and width to mask to fill up the whole screen
-		$('#mask').css({'width':maskWidth,'height':maskHeight});
-		
-		//transition effect		
-		$('#mask').fadeIn(500);	
-		$('#mask').fadeTo("slow",0.9);	
-	
-		//Get the window height and width
-		var winH = $(window).height();
-		var winW = $(window).width();
-              
-		//Set the popup window to center
-		$(id).css('top',  winH/2-$(id).height()/2);
-		$(id).css('left', winW/2-$(id).width()/2);
-	
-		//transition effect
-		$(id).fadeIn(2000); 	
-	
-	//if close button is clicked
-	$('.window .close').click(function (e) {
-		//Cancel the link behavior
-		e.preventDefault();
-		
-		$('#mask').hide();
-		$('.window').hide();
-	});		
-	
-	//if mask is clicked
-	$('#mask').click(function () {
-		$(this).hide();
-		$('.window').hide();
-	});		
-	
-});
-
-
-		</script>
-		<!--pop up java--> 
 	</head>
-	<body>
-	
-	<!-- popup html-/->
-<div id="boxes">
-  <div style="top: 199.5px; left: 551.5px; display: none;" id="dialog" class="window">Alpha Magnus Studios
-    <div id="lorem">
-      <p> This Website is under development. Some features may be unavailable or may not work as intended in this beta version. We will be back soon. Please feel free to explore our beta site </p>
-    </div>
-    <div id="popupfoot"> <a href ="" class="close agree" style="color:red;">Explore Beta</a></div>
-  </div>
-  <div style="width: 50%; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
-</div>
- <!-- popup html-->
-	
-	
-	
+	<body>	
 <!--home start-->
     
     <div id="home">
     	<div class="headerLine">
-	<div id="menuF" class="default">
-		<div class="container">
-			<div class="row">
-				<div class="logo col-md-4">
-					<div>
-						<a href="/" style="text-align:center; display:block">
-							<img src="images/AMS.png" >
-                            <h3>Dream.&nbsp;Design.&nbsp;Develop</h3>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-8">
-					<div class="navmenu" style="text-align: center;">
-						<ul id="menu">
-							<li class="active" ><a href="#home">Home</a></li>
-							<li><a href="#services">Services</a></li>
-							<li><a href="#clients">Clients</a></li>
-							<li><a href="#about">About</a></li>
-							<li class="last"><a href="#contact">Contact</a></li>
-							<!--li><a href="#features">Features</a></li-->
-						</ul>
+			<div id="menuF" class="default">
+				<div class="container">
+					<div class="row">
+						<div class="logo col-md-4">
+							<div>
+								<a href="/" style="text-align:center; display:block">
+									<img src="images/AMS.png">
+									<h3>Dream.&nbsp;Design.&nbsp;Develop</h3>
+								</a>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="navmenu" style="text-align: center;">
+								<ul id="menu">
+									<li class="active" ><a href="#home">Home</a></li>
+									<li><a href="#services">Services</a></li>
+									<li><a href="#clients">Clients</a></li>
+									<li><a href="#about">About</a></li>
+									<li class="last"><a href="#contact">Contact</a></li>
+									<!--li><a href="#features">Features</a></li-->
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</div>
-		<div class="container">
-			<div class="row wrap">
-				<div class="col-md-12 gallery"> 
+			<div class="container">
+				<div class="row wrap">
+					<div class="col-md-12 gallery"> 
 						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
 							<div data-thumb="" data-src="images/slides/blank.gif">
 								<div class="img-responsive camera_caption fadeFromBottom">
@@ -162,10 +109,10 @@
 								</div>
 							</div>
 						</div><!-- #camera_wrap_1 -->
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 		<div class="container">
 			<div class="row">
@@ -206,7 +153,7 @@
     <!--services start-->
     	
 	<div id="services">	
-	<div class="container" >
+	    <div class="container">
 			<div class="row">
 				<div class="col-md-12 hr1">
 					<hr>
@@ -284,114 +231,97 @@
 						<p style="text-align:justify">We here at AMS are passionate about making games which are not only exotic in graphics but also have a great gameplay and good story. We aim at making immersive games which work across multiple platforms. </p>
 					</div>
 				</div>
-				
-				
 			</div>
-		</div>	
-		
-		
+		</div>
     </div>
 
-<!--clients start-->
+	<!--clients start-->
     <div class="container">
-			<div class="row">
-				<div class="col-md-12 hr1">
-					<hr>
-				</div>
+		<div class="row">
+			<div class="col-md-12 hr1"><hr></div>
 			</div>
 		</div>	
-	<div id="clients">	
-	
-		<div class="container">
-			<div class="row aboutUs" style="margin-top:20px;">
-				<div class="col-md-12 ">
-					<h3>What our customers say about us</h3>
+		<div id="clients">
+			<div class="container">
+				<div class="row aboutUs" style="margin-top:20px;">
+					<div class="col-md-12 ">
+						<h3>What our clients say about us</h3>
+					</div>
+				</div>
+			</div>
+		
+			<div style="position: relative;">
+				<div class="horL"></div>
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/nitsri.png">
+								<h3>
+									<a href="http://www.iforkashmir.com/" target="_blank">National Institute of Technology, Srinagar.</a>
+								</h3>
+								<p>Being themselves the students of NIT Srinagar we feel extremely proud with the work that Alpha Magnus has done for us on both the development and testing sides.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/shmooze.png">
+								<h3>
+									<a href="https://www.shmooze.io/" target="_blank">Shmooze, CO, USA</a>
+								</h3>
+								<p>Awesome team to work with, great execution of plans. The guys at AMS were willing to go the extra mile for us whenever we had an urgent request. Efficiently met all the deadlines.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/albirra.png">
+								<h3>
+									<a href="http://www.albirra.com/index.html" target="_blank">Al-Birra Foundation</a>
+								</h3>
+								<p>They were the perfect partners we could have to really execute the plans which were just the scattered ideas in our brains. They, effeciently and effectively, did their job and together we created something worth sharing.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/jkgovt.png">
+								<h3>
+										<a onclick="alert('These projects are confidential!');">J&amp;K Government</a>
+								</h3>
+								<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/amx.png">
+								<h3>
+										<a href="http://amxinfinity.ml" target="_blank">AMX Infinity</a>
+								</h3>
+								<p>We are very fortunate to get to collaborate with Alpha Magnus Studios for our various projects. The team comprises of very friendly people of high calibre. Great work culture and company atmosphere.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/aliqra.png">
+								<h3>
+										<a href="http://aliqrakashmir.in" target="_blank">Al IQRA Kashmir</a>
+								</h3>
+								<p>AMS has been the perfect place for us to put our ideas into existence. It was their dedication towards our project that made our collaboration extremely successful. We recommend everyone to work with them.</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		
-		<div style="position: relative;">
-			<div class="horL"></div>
-			<div class="container">
-				<div class="row about">
-					<div class="col-md-6">
-						<div class="about1">
-						<img class="pic1Ab" src="images/picAbout/nitsri.png">
-							<h3>
-								<a href="http://www.iforkashmir.com/" target="_blank">National Institute of Technology, Srinagar.</a>
-							</h3>
-							<p>Being themselves the students of NIT Srinagar we feel extremely proud with the work that Alpha Magnus has done for us on both the development and testing sides.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about2">
-						<img class="pic2Ab" src="images/picAbout/shmooze.png">
-							<h3>
-								<a href="https://www.shmooze.io/" target="_blank">Shmooze, CO, USA</a>
-							</h3>
-							<p>Awesome team to work with, great execution of plans. AMS was willing to go the extra mile for us whenever we had urgent requests. Found them quite efficient in meeting the deadlines.</p>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		
-			
-		
-			<div class="container">
-				<div class="row about">
-					<div class="col-md-6">
-						<div class="about1">
-						<img class="pic1Ab" src="images/picAbout/albirra.png">
-							<h3>
-								<a href="http://www.albirra.com/index.html" target="_blank">Al-Birra Foundation</a>
-							</h3>
-							<p>They were the perfect partners we could have to really execute the plans which were just the scattered ideas in our brains. They, effeciently and effectively, did their job and together we created something worth sharing.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about2">
-						<img class="pic2Ab" src="images/picAbout/jkgovt.png">
-							<h3>
-									<a onclick="alert_client()">J&amp;K Government</a>
-							</h3>
-							<script>
-									function alert_client() {
-										alert("These projects are confidential!");
-									}
-									</script>
-							<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="container">
-				<div class="row about">
-					<div class="col-md-6">
-						<div class="about1">
-						<img class="pic1Ab" src="images/picAbout/amx.png">
-							<h3>
-									<a href="http://amxinfinity.ml" target="_blank">AMX Infinity</a>
-							</h3>
-							<p>We are very fortunate to get to collaborate with Alpha Magnus Studios for our various projects. The team comprises of very friendly people of high calibre. Great work culture and company atmosphere.</p>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="about2">
-						<img class="pic2Ab" src="images/picAbout/aliqra.png">
-							<h3>
-									<a href="http://aliqrakashmir.in" target="_blank">Al IQRA Kashmir</a>
-							</h3>
-							<p>AMS has been the perfect place for us to put our ideas into existence. It was their dedication towards our project that made our collaboration extremely successful. We recommend everyone to work with them.</p>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-		
-		</div>
-	</div>
 
 		<div class="line2">
             <div class="container">
@@ -403,25 +333,39 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="row Fresh" style="margin-top: 2%;">
+				<div class="row Fresh" style="margin-top: 2%; margin-bottom: 0;">
 					<div class="col-md-4 Des">
-                        <img src="images/lms.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <img src="images/showcase/lms.png" style="width:100%;margin-bottom:0;padding-bottom:0">
                         <h4 style="margin-top: 0;">Library Management System</h4>
 					</div>
 					<div class="col-md-4 Ver">
-                        <img src="images/abs.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <img src="images/showcase/abs.png" style="width:100%;margin-bottom:0;padding-bottom:0">
                         <h4 style="margin-top: 0;">Al-Birra Services</h4>
 					</div>
 					<div class="col-md-4 Fully">
-                        <img src="images/psga.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <img src="images/showcase/psga.png" style="width:100%;margin-bottom:0;padding-bottom:0">
                         <h4 style="margin-top: 0;">Public Services Online Portal</h4>
+					</div>		
+				</div>
+				<div class="row Fresh" style="margin-top: 0;">
+					<div class="col-md-4 Des">
+                        <img src="images/showcase/NorthTech-Engineering.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <h4 style="margin-top: 0;">NorthTech Engineering</h4>
+					</div>
+					<div class="col-md-4 Ver">
+                        <img src="images/showcase/salah-times.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <h4 style="margin-top: 0;">Salah Times</h4>
+					</div>
+					<div class="col-md-4 Fully">
+                        <img src="images/showcase/Al-Birra.png" style="width:100%;margin-bottom:0;padding-bottom:0">
+                        <h4 style="margin-top: 0;">Al-Birra Foundation</h4>
 					</div>		
 				</div>
 			</div>
 		</div>
 		
-<!--about start-->  		
-		<div id = "about">
+	<!--about start-->  		
+	<div id="about">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 wwa">
@@ -434,60 +378,53 @@
 		<div class="container">
 			<div class="row team">
 				<div class="col-md-4 b1">
-						<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/afaan.png">
-						<h4>Afaan Bilal</h4>
-						<h5>
-							Co-Founder<br>
-							<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">CEO</p>
-							<br>
-							afaan@alphamstudios.com
-						</h5>
-						<ul>
-							<li><a href="https://facebook.com/AfaanBilal" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="https://twitter.com/AfaanBilal" target="_blank"><i class="fa fa-twitter" ></i></a></li>
-							<li><a href="https://google.com/+AfaanBilal" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
-						</ul>
+					<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/afaan.png">
+					<h4>Afaan Bilal</h4>
+					<h5>
+						Co-Founder<br>
+						<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">CEO</p>
+						<br>
+						afaan@alphamstudios.com
+					</h5>
+					<ul>
+						<li><a href="https://facebook.com/AfaanBilal" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="https://twitter.com/AfaanBilal" target="_blank"><i class="fa fa-twitter" ></i></a></li>
+						<li><a href="https://google.com/+AfaanBilal" target="_blank"><i class="fa fa-google-plus-square"></i></a></li>
+					</ul>
 				</div>
 			
-			
 				<div class="col-md-4">
-						<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/moin.png">
-						<h4>Moin Khan</h4>
-						<h5>Co-Founder<br>
-						<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">CTO</p>
-						<br>
-						moin@alphamstudios.com</h5>
-						<ul>
-							<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="https://twitter.com/_moin_khan" target="_blank"><i class="fa fa-twitter" ></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-						</ul>
+					<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/moin.png">
+					<h4>Moin Khan</h4>
+					<h5>Co-Founder<br>
+					<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">CTO</p>
+					<br>
+					moin@alphamstudios.com</h5>
+					<ul>
+						<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="https://twitter.com/_moin_khan" target="_blank"><i class="fa fa-twitter" ></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+					</ul>
 				</div>
 		
 			
 				<div class="col-md-4 b3">
-						<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/anees.png">
-						<h4>Anees Muzzafer</h4>
-						<h5>Co-Founder<br>
-						<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">COO</p>
-						<br>
-						anees@alphamstudios.com</h5>
-						<ul>
-							<li><a href="https://facebook.com/aneesmuzaffar" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
-							<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
-							<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
-						</ul>
-				</div>
+					<img class="img-responsive" style="border-radius: 50%; max-height:180px" src="images/picTeam/anees.png">
+					<h4>Anees Muzzafer</h4>
+					<h5>Co-Founder<br>
+					<p style="font-size:15px; font-weight:bold; margin: 5px 0 -10px 0;padding: 0;">COO</p>
+					<br>
+					anees@alphamstudios.com</h5>
+					<ul>
+						<li><a href="https://facebook.com/aneesmuzaffar" target="_blank"><i class="fa fa-facebook-square"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" ></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus-square"></i></a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
-			
-	
-
- 
-
+	</div>
 <!--contact start-->
-    
     <div id="contact">
     	<div class="line5">					
 			<div class="container">
@@ -515,12 +452,6 @@
 						</div>
 					</form>
 				</div>
-				<script>
-				function under_develop(){
-				 alert("This feature is not available in beta version");
-				}
-				
-				</script>
 				<div class="col-md-3 col-xs-12 cont">
 					<ul>
 						<li><i class="fa fa-home"></i>Srinagar, Jammu and Kashmir, 190006</li>
@@ -535,8 +466,7 @@
 			</div>
 		</div>
 		<div class="line6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.84536223281!2d74.83636191537602!3d34.1247083805863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA3JzI5LjAiTiA3NMKwNTAnMTguOCJF!5e0!3m2!1sen!2sin!4v1501666063141" width="100%" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>		
-		
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3302.84536223281!2d74.83636191537602!3d34.1247083805863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA3JzI5LjAiTiA3NMKwNTAnMTguOCJF!5e0!3m2!1sen!2sin!4v1501666063141" width="100%" height="1000" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 		<div class="container">
 			<div class="row ftext">
@@ -562,11 +492,11 @@
 					</div>
 					<div class="soc col-md-12">
 						<ul>
-							<li class="soc1"><a href="http://linkedin.com/company/alphamstudios"></a></li>
+							<li class="soc1"><a href="https://linkedin.com/company/alphamstudios"></a></li>
 							<li class="soc2"><a href="#"></a></li>
 							<li class="soc3"><a href="https://twitter.com/alphamstudios"></a></li>
 							<li class="soc6"><a href="#"></a></li>
-							<li class="soc7"><a href="http://google.com/plus/AfaanBilal"></a></li>
+							<li class="soc7"><a href="https://google.com/+AfaanBilal"></a></li>
 						</ul>
 					</div>
 				</div>
@@ -575,7 +505,6 @@
 		<div class="lineBlack">
 			<div class="container">
 				<div class="row downLine">
-					
 					<div class="col-md-6 text-left copy">
 						<p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Alpha Magnus Studios. All Rights Reserved.</p>
 					</div>
@@ -593,13 +522,12 @@
 			</div>
 		</div>
     </div>		
-		
-		
+
 	<script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.slicknav.js"></script>
 	<script>
-			$(document).ready(function(){
+	$(document).ready(function(){
 			$(".bhide").click(function(){
 				$(".hideObj").slideDown();
 				$(this).hide(); //.attr()
@@ -617,8 +545,8 @@
 					$(this).find('i').removeClass('fa-heart').addClass('fa-heart-o');
 				});
 				
-				function sdf_FTS(_number,_decimal,_separator)
-				{
+			function sdf_FTS(_number,_decimal,_separator)
+			{
 				var decimal=(typeof(_decimal)!='undefined')?_decimal:2;
 				var separator=(typeof(_separator)!='undefined')?_separator:'';
 				var r=parseFloat(_number)
@@ -629,7 +557,7 @@
 				r=(rr[1]?b+'.'+rr[1]:b);
 
 				return r;
-}
+			}
 				
 			setTimeout(function(){
 					$('#counter').text('0');
@@ -740,5 +668,4 @@
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact.js"></script>
 	</body>
-	
 </html>
