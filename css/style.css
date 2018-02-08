@@ -1173,7 +1173,8 @@ border: none;
 .testimonial p{
 	margin:auto; 
 	text-align: justify; 
-	text-justify: inter-word; 
+	text-justify: inter-word;
+	margin-bottom:20px 
 }
 @media screen and (min-width: 680px){
 	.testimonial img{
