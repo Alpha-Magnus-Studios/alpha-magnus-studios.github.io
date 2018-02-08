@@ -1,0 +1,73 @@
+<div style="position: relative;">
+<div class="horL"></div>
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/nitsri.png">
+								<h3>
+									<a href="http://www.iforkashmir.com/" target="_blank">National Institute of Technology, Srinagar.</a>
+								</h3>
+								<p>Being themselves the students of NIT Srinagar we feel extremely proud with the work that Alpha Magnus has done for us on both the development and testing sides.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/shmooze.png">
+								<h3>
+									<a href="https://www.shmooze.io/" target="_blank">Shmooze, CO, USA</a>
+								</h3>
+								<p>Awesome team to work with, great execution of plans. The guys at AMS were willing to go the extra mile for us whenever we had an urgent request. Efficiently met all the deadlines.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/albirra.png">
+								<h3>
+									<a href="http://www.albirra.com/index.html" target="_blank">Al-Birra Foundation</a>
+								</h3>
+								<p>They were the perfect partners we could have to really execute the plans which were just the scattered ideas in our brains. They, effeciently and effectively, did their job and together we created something worth sharing.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/jkgovt.png">
+								<h3>
+										<a onclick="alert('These projects are confidential!');">J&amp;K Government</a>
+								</h3>
+								<p>There was always someone on other side to answer the call and get things moving. AMS was able to take what we gave them and they were able to implement it efficiently.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container">
+					<div class="row about">
+						<div class="col-md-6">
+							<div class="about1">
+							<img class="pic1Ab" src="images/picAbout/amx.png">
+								<h3>
+										<a href="http://amxinfinity.ml" target="_blank">AMX Infinity</a>
+								</h3>
+								<p>We are very fortunate to get to collaborate with Alpha Magnus Studios for our various projects. The team comprises of very friendly people of high calibre. Great work culture and company atmosphere.</p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="about2">
+							<img class="pic2Ab" src="images/picAbout/aliqra.png">
+								<h3>
+										<a href="http://aliqrakashmir.in" target="_blank">Al IQRA Kashmir</a>
+								</h3>
+								<p>AMS has been the perfect place for us to put our ideas into existence. It was their dedication towards our project that made our collaboration extremely successful. We recommend everyone to work with them.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+ </div>
+           

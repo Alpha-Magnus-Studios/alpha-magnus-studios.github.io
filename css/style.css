@@ -1155,10 +1155,30 @@ border: none;
 	background-image: -o-linear-gradient(left, rgba(0,0,0,0), rgba(219,219,219,1), rgba(0,0,0,0));
 }
 /**/
+
 .mNews{
 	margin-top: 26px !important;
 	margin-left: -49px !important;
 }
+
+.testimonial img{
+	margin:auto;
+	margin-bottom:15px
+
+}
+.testimonial h3{
+	margin:auto;
+	text-align: center; 
+	margin-bottom:20px
+
+}
+.testimonial p{
+	margin:auto; 
+	text-align: justify; 
+	text-justify: inter-word; 
+	text-align: center;
+}
+
 .line5 .Ama{
 	/*margin-top: 127px;
 	margin-bottom: 94px;*/
