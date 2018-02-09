@@ -1160,6 +1160,11 @@ border: none;
 	margin-top: 26px !important;
 	margin-left: -49px !important;
 }
+.testimonialContainer {
+	margin-left:20%;
+	margin-right:20%;
+	margin-top:50px;
+}
 
 .testimonial img{
 	margin:auto;
@@ -1170,13 +1175,25 @@ border: none;
 	text-align: center; 
 
 }
+
 .testimonial p{
 	margin:auto; 
 	text-align: justify; 
 	text-justify: inter-word;
+	text-align: center;
 	margin-bottom:20px 
 }
+
+@media screen and (max-width: 480px){
+	
+	.testimonialContainer {
+	margin-left:12%;
+	margin-right:12%;
+}
+	
+	}
 @media screen and (min-width: 680px){
+	
 	.testimonial img{
 		margin-bottom:15px
 	
