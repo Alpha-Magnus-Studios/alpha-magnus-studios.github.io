@@ -16,6 +16,6 @@ function call(code,operator,num){
 function whatsapp(code,operator,num1,num2,text){
     document.write('<a href="https://api.whatsapp.com/send?phone='
                     +code+operator+num1+num2+'&text='+text
-                    +'"  target="_blank">'+code+' ('+operator+') '+num1 +'-'+ num2+'</a>');
+                    +'"  target="_blank">'+'+'+code+' ('+operator+') '+num1 +'-'+ num2+'</a>');
     }
 
