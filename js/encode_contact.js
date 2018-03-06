@@ -13,9 +13,9 @@ function email(id,dom,ext){
 function call(code,operator,num){
     document.write('<a href="tel:'+code+operator+num+'">'+code+' '+operator+' '+num+'</a>');
 }
-function whatsapp(code,operator,num,text){
+function whatsapp(code,operator,num1,num2,text){
     document.write('<a href="https://api.whatsapp.com/send?phone='
-                    +code+operator+num+'&text='+text
-                    +'"  target="_blank">'+'+'+code+' '+operator+' '+num+'</a>');
+                    +code+operator+num1+num2+'&text='+text
+                    +'"  target="_blank">'+code+' ('+operator+') '+num1 +'-'+ num2+'</a>');
     }
 
