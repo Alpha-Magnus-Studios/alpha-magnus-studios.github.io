@@ -14,8 +14,10 @@ function call(code,operator,num){
     document.write('<a href="tel:'+code+operator+num+'">'+code+' '+operator+' '+num+'</a>');
 }
 function whatsapp(code,operator,num1,num2,text){
-    document.write('<a href="https://api.whatsapp.com/send?phone='
+    document.write('<a href="whatsapp://send?phone='
                     +code+operator+num1+num2+'&text='+text
                     +'"  target="_blank">'+'+'+code+' ('+operator+') '+num1 +'-'+ num2+'</a>');
     }
 
+
+   
