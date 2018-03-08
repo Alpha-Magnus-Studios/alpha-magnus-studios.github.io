@@ -18,6 +18,3 @@ function whatsapp(code,operator,num1,num2,text){
                     +code+operator+num1+num2+'&text='+text
                     +'"  target="_blank">'+'+'+code+' ('+operator+') '+num1 +'-'+ num2+'</a>');
     }
-
-
-   
