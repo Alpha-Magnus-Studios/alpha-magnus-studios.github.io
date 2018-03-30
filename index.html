@@ -99,6 +99,9 @@
 	drift.load('skvxursgahd8');
 	</script>
 	<!-- End of Async Drift Code -->
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
 </head>
 
 <body>
@@ -559,18 +562,26 @@
 							<input type="text" id="email" required class="col-md-6 col-xs-12 Email" name='email' placeholder='Email *' />
 							<textarea type="text" id="message" required class="col-md-12 col-xs-12 Message" name='message' placeholder='Message *'></textarea>
 							<div class="cBtn col-xs-12">
+								<div style="width:197.6px;margin: 15px 0 -25px -15px;">
+									<div class="g-recaptcha" style="  transform:scale(0.65);-webkit-transform:scale(0.65);transform-origin:0 0;-webkit-transform-origin:0 0;" data-sitekey="6Lcn9k8UAAAAALqQBAKl5tejtRdYY6ONTf7JwmkR" data-callback="enableBtn"></div>
+								</div>
 								<ul>
 									<li class="clear">
 										<a onclick="document.forms.contactForm.reset()">
 											<i class="fa fa-times"></i>clear form</a>
 									</li>
 									<li class="send">
-										<button style="background:0;border:0;color:white;" type="submit">
+										<button style="background:0;border:0;color:white;" type="submit" id="submit">
 											<i class="fa fa-share"></i> Send Message</button>
 									</li>
 								</ul>
 							</div>
 						</form>
+						<script>
+								document.getElementById("submit").disabled = true;
+								function enableBtn(){
+									document.getElementById("submit").disabled = false;}
+								</script>
 					</div>
 					<div class="col-md-3 col-xs-12 cont">
 						<ul>
